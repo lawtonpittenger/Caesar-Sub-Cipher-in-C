@@ -17,13 +17,11 @@ int readstr(char string[])//Function that collects a string input from the user
    printf("Enter a sentence: ");
    while((x = getchar()) != '\n')
        string[i++] = x;
-   ift = string;
-   //while(*ift!='\0') 
-   //printf("%c",*ift++);                                  
+   ift = string;                                 
    return strlen(string);
 }
 
-void encryptCeaser(char ori_str[], char enc_str[], int shift)//Function that actually preforms the encryption. 
+void encryptCeaser(char ori_str[], char enc_str[], int shift)//Function that actually performs the encryption. 
 {
    int z=0;
    char *ift;
